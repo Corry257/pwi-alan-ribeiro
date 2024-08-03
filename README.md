@@ -117,11 +117,11 @@ Para verificar se a configuração deu certo digite:
 - 6- Agora vamos criar uma chave autenticadora do tipo SSH. (é preciso fazer essas configurações para conseguir alterar os arquivos e pastas localmente e posteriormente subi-los para o github via comando no terminal) 
 
 - 7 - Digite o seguinte comando no terminal: 
-# ssh-keygen -t ed25519 -C "your_email@example.com" 
+        # ssh-keygen -t ed25519 -C "your_email@example.com" 
 (será solicitado uma senha, você precisa cria-la e repiti-la) Pronto, você gerou uma chave. 
 
 - 8 - execute o seguinte código para visualizar sua chave: 
-# cat ~/.ssh/id_ed25519.pub
+         # cat ~/.ssh/id_ed25519.pub
 copie a chave gerada e vá até a parte superior do lado direito do github onde encontra-se sua foto de perfil e clique sobre a imagem, clique em settings e depois em SSH and GPG keys.
 
 - 9 - você irá encontrar a seguinte mensagem: 'Check out our guide to connecting to GitHub using SSH keys', caso clique sobre a mensagem destaca em azul, você será redirecionado(a) para um guia de configuração de autenticação do tipo SSH, você pode ler o guia posteriormente para entender melhor, mas para fins didaticos estou sendo mais direto aqui.
@@ -138,7 +138,7 @@ copie a chave gerada e vá até a parte superior do lado direito do github onde 
 Verifique se seu repositório foi baixado.
 
 - 14 - No terminal você pode digitar o comando 
-      # ls
+         # ls
 Para listar os arquivos e pastas do local que você está. Certifique-se que a pasta do seu repositório se encontra no local (ela tem o mesmo nome do seu repositório).
 
 - 15 - Visto que a pasta foi clonada (baixada) você vai acessar ela através do comando 
