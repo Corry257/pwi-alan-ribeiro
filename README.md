@@ -245,3 +245,4 @@ Uma boa prática de mercado é falar a mensagem na terceira pessoa. Exemplo: "Cr
 
 Será solicitado aquela senha que você criou ao gerar a autenticação do tipo SSH, sigite sua senha e aperte enter, se tudo deu certo, você conseguiu alterar sua pasta e subi-la para o github com as alterações feitas localmente.
 
+Teste 
