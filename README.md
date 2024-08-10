@@ -55,7 +55,7 @@ Para verificar a configuração deu certo digite:
 
 - Dicas do VSCode: Ctrl + S = Salvar (fica uma bolinha na aba quando não está salvo, e fica um M quando é salvo).
 
-# Copmo mandar as suas alterações pro github.
+# Como mandar as suas alterações pro github.
 
 Use o comando:
 
