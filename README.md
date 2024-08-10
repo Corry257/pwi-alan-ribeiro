@@ -17,21 +17,21 @@ Em sala de aula o professor João fez um passo a passo para configurar o git em 
 
 - Hora de configurar o programa, na documentação (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) vamos utilizar dois comandos para cadastrar nossas credenciais do Git no computador através dos comandos:
 
-     git config --global user.name "Nome do usário"
+      git config --global user.name "Nome do usário"
 
-     git config --global user.email emaildousuario@exemplo.com
+      git config --global user.email emaildousuario@exemplo.com
 
 IMPORTANTE! Atente que os dados acima precisam ser os seus!
 
 Para verificar a configuração deu certo digite:
 
-    git config --list
+      git config --list
 
 - No seu repositório clique no botão verde 'Code' e escolha a opção 'HTTP' e em seguida copie o endereço do seu repositório oferecido na opção.
 
 - No terminal digite o comando 'git clone' acompanhado do endereço copiado. Ex.:
 
-    git clone https://github.com/davivilar/pwi-davi-vilar.git
+      git clone https://github.com/davivilar/pwi-davi-vilar.git
 
 - No Git bash liste as pastas com o comando 'ls' e verifique se seu repositório foi baixado.
 
@@ -65,24 +65,24 @@ Ele monitora as atividades e te direciona em que etapa do processo você está.
 
 - Os arquivos em vermelho não estão inseridos no 'envelope' para adicionar utilize o comando:
 
-   git add nome-do-arquivo
+       git add nome-do-arquivo
  
  ou 
-      git add . 
+       git add . 
       
 esse é pra adicionar todos os arquivos ao mesmo tempo
 
 - Para retirar os arquivos utilize o comando:
 
-    git restore --staged nome-do-arquivo' 
+       git restore --staged nome-do-arquivo' 
     
 ou 
     
-    git restore --staged .
+       git restore --staged .
 
 - Agora é hora de comentar suas alterações, utilize o comando:
 
-     git commit -m "mensagem que deseja"
+       git commit -m "mensagem que deseja"
 
  para faze-lo. Uma boa prática de mercado é falar a mensagem na terceira pessoa. Exemplo: "Cria um botão na página inicial".
 
