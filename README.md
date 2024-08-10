@@ -17,9 +17,9 @@ Em sala de aula o professor João fez um passo a passo para configurar o git em 
 
 - Hora de configurar o programa, na documentação (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) vamos utilizar dois comandos para cadastrar nossas credenciais do Git no computador através dos comandos:
 
-   git config --global user.name "João Siles"
+     git config --global user.name "Nome do usário"
 
-   git config --global user.email jpsileskh@hotmail.com
+     git config --global user.email emaildousuario@exemplo.com
 
 IMPORTANTE! Atente que os dados acima precisam ser os seus!
 
@@ -55,15 +55,36 @@ Para verificar a configuração deu certo digite:
 
 - Dicas do VSCode: Ctrl + S = Salvar (fica uma bolinha na aba quando não está salvo, e fica um M quando é salvo).
 
-- COMO MANDAR AS SUAS CRIAÇÕES/ALTERAÇÕES PRO GITHUB.
+# COMO MANDAR AS SUAS CRIAÇÕES/ALTERAÇÕES PRO GITHUB.
 
-- Use o comando 'git status'. Ele monitora as atividades e te direciona em que etapa do processo você está.
+Use o comando:
 
-- Os arquivos em vermelho não estão inseridos no 'envelope' para adicionar utilize o comando 'git add nome-do-arquivo' ou 'git add .' (esse é pra colocar tuuuuuudo).
+       git status
 
-- Para retirar os arquivos utilize o comando 'git restore --staged nome-do-arquivo' ou 'git restore --staged .'
+Ele monitora as atividades e te direciona em que etapa do processo você está.
 
-- Agora é hora de comentar suas alterações, utilize o comando 'git commit -m "mensagem que deseja"' para faze-lo. Uma boa prática de mercado é falar a mensagem na terceira pessoa. Exemplo: "Cria um botão na página inicial".
+- Os arquivos em vermelho não estão inseridos no 'envelope' para adicionar utilize o comando:
+
+   git add nome-do-arquivo
+ 
+ ou 
+      git add . 
+      
+esse é pra adicionar todos os arquivos ao mesmo tempo
+
+- Para retirar os arquivos utilize o comando:
+
+    git restore --staged nome-do-arquivo' 
+    
+ou 
+    
+    git restore --staged .
+
+- Agora é hora de comentar suas alterações, utilize o comando:
+
+     git commit -m "mensagem que deseja"
+
+ para faze-lo. Uma boa prática de mercado é falar a mensagem na terceira pessoa. Exemplo: "Cria um botão na página inicial".
 
 - Feito o commit agora é hora de enviar para a nuvem, utilize o comando 'git push' e siga as instruções:
 
