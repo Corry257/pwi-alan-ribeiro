@@ -15,9 +15,11 @@ Em sala de aula o professor João fez um passo a passo para configurar o git em 
 
 - Após instalado você pode clicar com o botão direito em qualquer pasta da sua escolha e escolher a opção 'Mostrar mais opções' e em seguida 'Git Bash Here'. Certifique-se que é exibido o nome da pasta no destaque em amarelo do terminal.
 
-- Hora de configurar o programa, na documentação (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) vamos utilizar dois comandos para cadastrar nossas credenciais do Git no computador através dos comandos:
+- Hora de configurar o programa, na documentação (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) vamos utilizar dois comandos para cadastrar nossas credenciais do Git no computador através do comando:
 
       git config --global user.name "Nome do usário"
+
+e
 
       git config --global user.email emaildousuario@exemplo.com
 
@@ -39,7 +41,7 @@ Para verificar a configuração deu certo digite:
 
 - Visto que a pasta foi clonada (baixada) você vai acessar ela através do comando 'cd nome-da-pasta' (substitua pelo real nome da pasta, você pode digitar as 3 ou 4 primeiras letras e apertar a tecla TAB para auto-completar). Caso o comando tenha dado certo o caminho em amarelo vai ser atualizado seguido de uma mensagem em azul-claro escrito '(main)'.
 
-   comando uteis para navegar nas pastas:
+   comandos uteis para navegar nas pastas:
 
        cd nome-da-pasta : acessa pasta
 
@@ -68,7 +70,7 @@ Ele monitora as atividades e te direciona em que etapa do processo você está.
        git add nome-do-arquivo
  
  ou 
-       git add . 
+        git add . 
       
 esse é pra adicionar todos os arquivos ao mesmo tempo
 
