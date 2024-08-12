@@ -1,11 +1,16 @@
 echo OFF 
 
-echo --- CONFIGURANDO USUÁRIO GITHUB ---
-git config --global user.name "Alan Neves"
+echo --- Desativando usuarios do github ---
+git config --global --unset-all user.name
+git config --global --unset-all user.email
+
+echo --- Configurando novo usuario do github ---
+git config --global user.name "Corry257"
 git config --global user.email alan.n.ribeiro257@gmail.com
-echo --- Mostrando a configuração atual do github ---
+
+echo --- Mostrar configuracao do github atual ---
 git config --list
+
 echo --- Fim ---
-echo --- João lindo, saudades ---
 
 pause
