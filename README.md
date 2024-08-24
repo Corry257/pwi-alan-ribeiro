@@ -237,7 +237,7 @@ Para listar os arquivos e pastas do local que você está. Certifique-se que a p
 
 (substitua pelo real nome da pasta, você pode digitar as 3 ou 4 primeiras letras e apertar a tecla TAB para auto-completar).
 
-  # Comando uteis para navegar nas pastas:
+  # Comandos uteis para navegar nas pastas:
 
       cd nome-da-pasta : acessa pasta
 
@@ -297,3 +297,144 @@ Será solicitado aquela senha que você criou ao gerar a autenticação do tipo 
 
 Sexta feira, 09 de Agosto de 2024
 Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um modo de automátizar a configuração do git com um tipo de arquivo .bat
+
+# Automatizando a configuraçãoo do git 
+
+- Abra o bloco de notas e escreva todos os comandos usados para configurar o git: 
+
+          echo OFF 
+
+          echo --- Desativando usuarios do github ---
+          git config --global --unset-all user.name
+          git config --global --unset-all user.email
+
+          echo --- Configurando novo usuario do github ---
+          git config --global user.name "Corry257"
+          git config --global user.email alan.n.ribeiro257@gmail.com
+
+          echo --- Mostrar configuracao do github atual ---
+          git config --list
+  
+          echo --- Fim ---
+
+          pause       
+
+- Salve o arquivo como .bat (salvei o nome do arquivo como git-config.bat)
+- Foi criado um arquivo executável, agora com apenas dois cliques é possível configurar o git
+
+# Primeira página web 
+- Abra o VSCode e crie um novo arquivo no formato .html 
+- Digite um "!" e selecione a opção html. 
+- Deve aparecer os seguintes códigos:
+
+     <!DOCTYPE html> 
+         <html lang="en"> 
+         <head>                    
+            <meta charset="UTF-8"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>  </title> 
+         </head>           
+         <body;">   
+             .
+         </body>   
+         </html>    
+
+- Essa é a estrutura básica para começar uma nova página 
+- O html (Hypertext Markup Language) funciona por meio de tags, elas são instruções que definem a estrutura e o conteúdo das páginas da web. Elas são escritas entre colchetes angulares (< >) e geralmente ocorrem em pares: uma tag de abertura e uma tag de fechamento.
+- tudo que estiver entre <html> e </html> está dentro da estrutura do código html e será lido pelo navegador como tal. 
+- Você pode fazer comentários ao longo de seu cósigo, explicando as linhas de comandos para facilitar a compreessão do código em consultas futuras, seja para você ou para terceiros.
+- Para comentar basta usar a seguinte tag: 
+
+       <!-- Comentário --> 
+
+- Tudo que estiver entre <!-- e --> Não será lido pelo programa, você pode escrever o que quiser que o programa irá ignorar. 
+
+       <!DOCTYPE html> <!-- Tipo do documento (neste caso, html) -->
+         <html lang="en"> <!-- lingua que o texto do código será escrito -->
+         <head>                    <!-- Cabeça do código (onde se coloca informações gerais da pag) -->
+            <meta charset="UTF-8"> <!-- Tipo de assentuação, neste caso está no padrão brasileiro -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- prof não expplicou mas depois vejo -->
+            <title>Alan Neves</title> <!-- tag de título da página (aparece na aba do navegador) -->
+        </head>            <!-- tag de fechamento da cabça -->
+        <body>         <!-- início da tag onde começa o corpo da página -->
+            <h1><p>Primeira web pag </p></h1>         <!-- e -->
+            <h2><p>Programação web I</p></h2>         <!-- e -->
+            <h3><p>Alan Neves</p></h3>         <!-- e -->
+            <h4><p>09/08/2024</p></h4>         <!-- e -->
+            <h5><p>Esta é a minha primeira página web</p></h5>         <!-- e -->
+        </body>   <!-- tag de fechamento do corpo da página -->
+        </html>    <!-- tag de fechamento do código -->
+     
+      O que for escrito aqui não será lido como um código html, pois está fora da tag html
+
+# Aula 03
+
+Sexta feira, 16 de Agosto de 2024
+Na terceira aula o professor ensinou como fazer algumas personalizações na página web, tal como mudar as fontes e seus tamnahos, a colorização da página e das letras e algumas tags novas. 
+
+# Personalizando a web pag
+
+- Para mudar o tamanho das fontes 
+
+- Para mudar a cor de fundo da página
+
+- para mudar a cor das fontes 
+
+- para inserir imagens 
+
+- para inserir icone exibido na aba do navegador
+
+- código personalizado ao fim da aula: 
+
+ <!DOCTYPE html> 
+         <html lang="en"> 
+         <head>                    
+            <meta charset="UTF-8"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>  </title> 
+         </head>           
+         <body;"> 
+           <h1 style="color: white; background-color: black;"><p>Pirataria é Amor S2!  </h1>   
+           <h2><p>Programação WEB I</p></h2>            
+           <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;color: brown;"><p>Alan Neves </h3> 
+           <h4><p>09/08/2024 </h4>      
+           <h5><p> Esta é minha primeira página web </h5> 
+           <img src="images/51ueH2VeSPL.jpg" alt="Diga sim a pirataria">   
+         </body>   
+         </html> 
+
+# Aula 04 
+
+Sexta feira, 23 de Agosto de 2024
+O professor fez a proposta de criação de um site para um restaurante, a estrutura do site deveria possuir título, descrição, cardápio, endereço e redes sociais. 
+
+# Atividade - Criando uma página web para um restaurante
+
+- dcódigo personalizado ao fim da aula:
+
+<!-- Criação de site para restaurante -->> 
+
+<!DOCTYPE html> <!-- Tipo do documento, neste caso é html -->
+<html lang="en"> <!-- Linguagem em que o código está escrito, neste caso é inglês -->
+
+<head> <!-- Cabeça do código  -->
+    <meta charset="UTF-8"> <!-- Padrão de escrita brasileiro -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sujiro Kimimame</title> <!-- Título do site (aparece na aba do navegador)-->
+    <link rel="icon" type="image/x-icon" href="images/icons8-sushi-48.png"> <!-- icone do site (aparece na aba do navegador) -->
+</head> <!-- Final da cabeça -->
+
+<body;"> <!-- Início do corpo do site -->
+        <h1 style="color: white; background-color: black;"><p>Restaurante Sujiro Kimimame </h1>   <!-- Primeira linha e nome do site -->
+        <h2><p>Você pode negar nossas sugestões, mas elas são irresistíveis </p></h2>  <!-- slogan -->
+        <img src="images/Sujirokimimame.jpg" alt="Sujiro Kimimame"> <br>   <!-- foto do dono do restaurante -->
+        <h3 style="color: white; background-color: black;">Cardápio </h3> <!-- Título do cardápio -->
+        <img src="images/nome-sushi.jpg" alt="Sujiro Kimimame">   <!-- Foto do cardápio -->
+        <!-- e -->
+        <h4><p>Rua dos bobos, n° 000 </h4> <!-- Endereço do rerstaurante -->
+        <h5><p>Nossas redes sociais: @resujirokimimame</h5>      <!-- redes sociais -->
+        
+</body>   <!-- Final do corpo do site -->
+</html>    <!-- Final do código html -->
+
+
