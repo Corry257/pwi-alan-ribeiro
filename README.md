@@ -378,7 +378,7 @@ Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um mod
 <head>                    <!-- Cabeça do código (onde se coloca informações gerais da pag) -->
 <meta charset="UTF-8"> <!-- Tipo de assentuação, neste caso está no padrão brasileiro -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- prof não expplicou mas depois vejo -->
-<title>Alan Neves</title> <!-- tag de título da página (aparece na aba do navegador) -->
+<!-- tag de título da página (aparece na aba do navegador) -->
 </head>            <!-- tag de fechamento da cabça -->
 <body>         <!-- início da tag onde começa o corpo da página -->
 <h1><p>Primeira web pag </p></h1>         <!-- e -->
