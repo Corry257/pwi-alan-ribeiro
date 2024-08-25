@@ -396,15 +396,29 @@ Na terceira aula o professor ensinou como fazer algumas personalizações na pá
 
 # Personalizando a web pag
 
-- Para mudar o tamanho das fontes 
+- Para mudar o tamanho das fontes você pode usar a tag < style > usando dentro de uma tag de texto como < p > e < h1 >, por exemplo: 
 
-- Para mudar a cor de fundo da página
+       <p style="font-size: 20px;">Este é um parágrafo com tamanho de fonte 20px.</p>
 
-- para mudar a cor das fontes 
+- Para alterar a cor de fundo de uma página, você pode usar a tag < body > com o atributo style, por exemplo:
 
-- para inserir imagens 
+       <body style="background-color: lightblue;">
+  <!-- Conteúdo da página -->
+       </body>
 
-- para inserir icone exibido na aba do navegador
+- para mudar a cor das fontes: 
+
+      <p style="color: red;">Este é um parágrafo com texto em vermelho.</p>
+
+- Para inserir uma imagem, use a tag < img >:
+
+      <img src="caminho/para/imagem.jpg" alt="Descrição da imagem" width="300" height="200">
+        
+- Para inserir o icone exibido na aba do navegador, o chamado "favicon". use a tag < link > no < head > da sua página:
+
+      <head>
+       <link rel="icon" href="caminho/para/favicon.ico" type="image/x-icon">
+      </head>
 
 - código personalizado ao fim da aula: 
 
@@ -413,17 +427,35 @@ Na terceira aula o professor ensinou como fazer algumas personalizações na pá
          <head>                    
             <meta charset="UTF-8"> 
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>  </title> 
+            <title> Pirataria </title> 
          </head>           
          <body;"> 
            <h1 style="color: white; background-color: black;"><p>Pirataria é Amor S2!  </h1>   
            <h2><p>Programação WEB I</p></h2>            
            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;color: brown;"><p>Alan Neves </h3> 
-           <h4><p>09/08/2024 </h4>      
-           <h5><p> Esta é minha primeira página web </h5> 
+           <h4><p>16/08/2024 </h4>      
+           <h5><p> Diga sim a pirataria </h5> 
            <img src="images/51ueH2VeSPL.jpg" alt="Diga sim a pirataria">   
          </body>   
          </html> 
+
+- Como o navegador mostra a web pag a partir do código a cima: 
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>                    
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>           
+<body;"> 
+<h1 style="color: white; background-color: black;"><p>Pirataria é Amor S2!  </h1>   
+<h2><p>Programação WEB I</p></h2>            
+<h3 style="font-family: Georgia, 'Times New Roman', Times, serif;color: brown;"><p>Alan Neves </h3> 
+<h4><p>16/08/2024 </h4>      
+<h5><p> Diga sim a pirataria </h5> 
+<img src="images/51ueH2VeSPL.jpg" alt="Diga sim a pirataria">   
+</body>   
+</html> 
 
 # Aula 04 
 
@@ -434,30 +466,47 @@ O professor fez a proposta de criação de um site para um restaurante, a estrut
 
 - dcódigo personalizado ao fim da aula:
 
-<!-- Criação de site para restaurante -->> 
+       <!-- Criação de site para restaurante -->> 
+
+      <!DOCTYPE html> <!-- Tipo do documento, neste caso é html -->
+      <html lang="en"> <!-- Linguagem em que o código está escrito, neste caso é inglês -->
+       
+      <head> <!-- Cabeça do código  -->
+           <meta charset="UTF-8"> <!-- Padrão de escrita brasileiro -->
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Restaurante Sujiro Kimimame</title> <!-- Título do site (aparece na aba do navegador)-->
+           <link rel="icon" type="image/x-icon" href="images/icons8-sushi-48.png"> <!-- icone do site (aparece na aba do navegador) -->
+      </head> <!-- Final da cabeça -->
+
+      <body;"> <!-- Início do corpo do site -->
+           <h1 style="color: white; background-color: black;"><p>Restaurante Sujiro Kimimame </h1>   <!-- Primeira linha e nome do site -->
+           <h2><p>Você pode negar nossas sugestões, mas elas são irresistíveis </p></h2>  <!-- slogan -->
+           <img src="images/Sujirokimimame.jpg" alt="Sujiro Kimimame"> <br>   <!-- foto do dono do restaurante -->
+           <h3 style="color: white; background-color: black;">Cardápio </h3> <!-- Título do cardápio -->
+           <img src="images/nome-sushi.jpg" alt="Sujiro Kimimame">   <!-- Foto do cardápio -->
+           <!-- e -->
+           <h4><p>Rua dos bobos, n° 000 </h4> <!-- Endereço do rerstaurante -->
+           <h5><p>Nossas redes sociais: @resujirokimimame</h5>      <!-- redes sociais -->        
+      </body>   <!-- Final do corpo do site -->
+      </html>    <!-- Final do código html -->
+
+- Como o navegador exibe o código acima: 
 
 <!DOCTYPE html> <!-- Tipo do documento, neste caso é html -->
-<html lang="en"> <!-- Linguagem em que o código está escrito, neste caso é inglês -->
-
+<html lang="en"> <!-- Linguagem em que o código está escrito, neste caso é inglês -->    
 <head> <!-- Cabeça do código  -->
-    <meta charset="UTF-8"> <!-- Padrão de escrita brasileiro -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Sujiro Kimimame</title> <!-- Título do site (aparece na aba do navegador)-->
-    <link rel="icon" type="image/x-icon" href="images/icons8-sushi-48.png"> <!-- icone do site (aparece na aba do navegador) -->
+     <meta charset="UTF-8"> <!-- Padrão de escrita brasileiro -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Título do site (aparece na aba do navegador)-->
+     <link rel="icon" type="image/x-icon" href="images/icons8-sushi-48.png"> <!-- icone do site (aparece na aba do navegador) -->
 </head> <!-- Final da cabeça -->
-
 <body;"> <!-- Início do corpo do site -->
-        <h1 style="color: white; background-color: black;"><p>Restaurante Sujiro Kimimame </h1>   <!-- Primeira linha e nome do site -->
-        <h2><p>Você pode negar nossas sugestões, mas elas são irresistíveis </p></h2>  <!-- slogan -->
-        <img src="images/Sujirokimimame.jpg" alt="Sujiro Kimimame"> <br>   <!-- foto do dono do restaurante -->
-        <h3 style="color: white; background-color: black;">Cardápio </h3> <!-- Título do cardápio -->
-        <img src="images/nome-sushi.jpg" alt="Sujiro Kimimame">   <!-- Foto do cardápio -->
-        <!-- e -->
-        <h4><p>Rua dos bobos, n° 000 </h4> <!-- Endereço do rerstaurante -->
-        <h5><p>Nossas redes sociais: @resujirokimimame</h5>      <!-- redes sociais -->
-        
+     <h1 style="color: white; background-color: black;"><p>Restaurante Sujiro Kimimame </h1>   <!-- Primeira linha e nome do site -->
+     <h2><p>Você pode negar nossas sugestões, mas elas são irresistíveis </p></h2>  <!-- slogan -->
+     <img src="images/Sujirokimimame.jpg" alt="Sujiro Kimimame"> <br>   <!-- foto do dono do restaurante -->
+     <h3 style="color: white; background-color: black;">Cardápio </h3> <!-- Título do cardápio -->
+     <img src="images/nome-sushi.jpg" alt="Sujiro Kimimame">   <!-- Foto do cardápio -->
+     <h4><p>Rua dos bobos, n° 000 </h4> <!-- Endereço do rerstaurante -->
+     <h5><p>Nossas redes sociais: @resujirokimimame</h5>      <!-- redes sociais -->        
 </body>   <!-- Final do corpo do site -->
 </html>    <!-- Final do código html -->
-
-
-
