@@ -298,7 +298,7 @@ Será solicitado aquela senha que você criou ao gerar a autenticação do tipo 
 Sexta feira, 09 de Agosto de 2024
 Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um modo de automátizar a configuração do git com um tipo de arquivo .bat
 
-# Automatizando a configuraçãoo do git 
+# Automatizando a configuraçãoo do git no windows
 
 - Abra o bloco de notas e escreva todos os comandos usados para configurar o git: 
 
@@ -322,6 +322,10 @@ Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um mod
 - Salve o arquivo como .bat (salvei o nome do arquivo como git-config.bat)
 - Foi criado um arquivo executável, agora com apenas dois cliques é possível configurar o git
 
+# Automatizando a configuação do git no linux 
+
+- Estudando...
+
 # Primeira página web 
 - Abra o VSCode e crie um novo arquivo no formato .html 
 - Digite um "!" e selecione a opção html. 
@@ -341,13 +345,13 @@ Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um mod
 
 - Essa é a estrutura básica para começar uma nova página 
 - O html (Hypertext Markup Language) funciona por meio de tags, elas são instruções que definem a estrutura e o conteúdo das páginas da web. Elas são escritas entre colchetes angulares (< >) e geralmente ocorrem em pares: uma tag de abertura e uma tag de fechamento.
-- tudo que estiver entre <html> e </html> está dentro da estrutura do código html e será lido pelo navegador como tal. 
+- tudo que estiver entre < html > e </ html > está dentro da estrutura do código html e será lido pelo navegador como tal. 
 - Você pode fazer comentários ao longo de seu cósigo, explicando as linhas de comandos para facilitar a compreessão do código em consultas futuras, seja para você ou para terceiros.
 - Para comentar basta usar a seguinte tag: 
 
        <!-- Comentário --> 
 
-- Tudo que estiver entre <!-- e --> Não será lido pelo programa, você pode escrever o que quiser que o programa irá ignorar. 
+- Tudo que estiver entre <!- - e - -> Não será lido pelo programa, você pode escrever o que quiser que o programa irá ignorar. 
 
        <!DOCTYPE html> <!-- Tipo do documento (neste caso, html) -->
          <html lang="en"> <!-- lingua que o texto do código será escrito -->
@@ -366,6 +370,24 @@ Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um mod
         </html>    <!-- tag de fechamento do código -->
      
       O que for escrito aqui não será lido como um código html, pois está fora da tag html
+
+- Veja como este código anterior é mostrado pelo navegador: 
+
+<!DOCTYPE html> <!-- Tipo do documento (neste caso, html) -->
+     <html lang="en"> <!-- lingua que o texto do código será escrito -->
+     <head>                    <!-- Cabeça do código (onde se coloca informações gerais da pag) -->
+          <meta charset="UTF-8"> <!-- Tipo de assentuação, neste caso está no padrão brasileiro -->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- prof não expplicou mas depois vejo -->
+          <title>Alan Neves</title> <!-- tag de título da página (aparece na aba do navegador) -->
+     </head>            <!-- tag de fechamento da cabça -->
+     <body>         <!-- início da tag onde começa o corpo da página -->
+          <h1><p>Primeira web pag </p></h1>         <!-- e -->
+          <h2><p>Programação web I</p></h2>         <!-- e -->
+          <h3><p>Alan Neves</p></h3>         <!-- e -->
+          <h4><p>09/08/2024</p></h4>         <!-- e -->
+          <h5><p>Esta é a minha primeira página web</p></h5>         <!-- e -->
+     </body>   <!-- tag de fechamento do corpo da página -->
+     </html>    <!-- tag de fechamento do código -->
 
 # Aula 03
 
