@@ -374,20 +374,20 @@ Na segunda aula o professor Davi Villar ensinou alguns comandos de html e um mod
 - Veja como este código anterior é mostrado pelo navegador: 
 
 <!DOCTYPE html> <!-- Tipo do documento (neste caso, html) -->
-     <html lang="en"> <!-- lingua que o texto do código será escrito -->
-     <head>                    <!-- Cabeça do código (onde se coloca informações gerais da pag) -->
-          <meta charset="UTF-8"> <!-- Tipo de assentuação, neste caso está no padrão brasileiro -->
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- prof não expplicou mas depois vejo -->
-          <title>Alan Neves</title> <!-- tag de título da página (aparece na aba do navegador) -->
-     </head>            <!-- tag de fechamento da cabça -->
-     <body>         <!-- início da tag onde começa o corpo da página -->
-          <h1><p>Primeira web pag </p></h1>         <!-- e -->
-          <h2><p>Programação web I</p></h2>         <!-- e -->
-          <h3><p>Alan Neves</p></h3>         <!-- e -->
-          <h4><p>09/08/2024</p></h4>         <!-- e -->
-          <h5><p>Esta é a minha primeira página web</p></h5>         <!-- e -->
-     </body>   <!-- tag de fechamento do corpo da página -->
-     </html>    <!-- tag de fechamento do código -->
+<html lang="en"> <!-- lingua que o texto do código será escrito -->
+<head>                    <!-- Cabeça do código (onde se coloca informações gerais da pag) -->
+<meta charset="UTF-8"> <!-- Tipo de assentuação, neste caso está no padrão brasileiro -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- prof não expplicou mas depois vejo -->
+<title>Alan Neves</title> <!-- tag de título da página (aparece na aba do navegador) -->
+</head>            <!-- tag de fechamento da cabça -->
+<body>         <!-- início da tag onde começa o corpo da página -->
+<h1><p>Primeira web pag </p></h1>         <!-- e -->
+<h2><p>Programação web I</p></h2>         <!-- e -->
+<h3><p>Alan Neves</p></h3>         <!-- e -->
+<h4><p>09/08/2024</p></h4>         <!-- e -->
+<h5><p>Esta é a minha primeira página web</p></h5>         <!-- e -->
+</body>   <!-- tag de fechamento do corpo da página -->
+</html>    <!-- tag de fechamento do código -->
 
 # Aula 03
 
