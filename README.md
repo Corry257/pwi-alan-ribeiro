@@ -516,3 +516,36 @@ Sexta-feira, 30 de agosto de 2024
 Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas, ensinou novas tags e como mudar a coloração dessas tabelas e listas. 
 
 - Acrescentando tabelas
+
+      <!DOCTYPE html>
+       <html lang="en">
+      <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale-1.0">
+       <title> sei la </title> 
+
+      <style>
+         table, th, td
+       {
+      border: 1px solid rgb(238, 7, 7);
+      }
+    
+       </style>
+       </head>
+        <body>
+         <table>
+        <tbody>
+      <tr>
+        <th> prato </th>
+        <th> descrição </th>
+        <th> valor </th>
+      </tr>
+      <tr>
+        <td> baião de dois </td>
+        <td> comida nordestina </td>
+        <td> R$15,00 </td>
+      </tr>
+       </tbody>
+       </table>
+      </body>
+      </html>
