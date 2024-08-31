@@ -557,15 +557,7 @@ Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale-1.0">
-  <title> sei la </title> 
 
-<style>
-    table, th, td
-    {
-      border: 1px solid rgb(238, 7, 7);
-    }
-    
-</style>
 </head>
 <body>
   <table>
