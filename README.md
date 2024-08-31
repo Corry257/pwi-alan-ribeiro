@@ -589,12 +589,18 @@ Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas
             <li> arroz </li>
             <li> macarrão </li>
             <li> feijão </li>
-
+      <br>
        <ol>
          <li> arroz </li>
          <li> macarrão</li>
          <li> feijão</li>
       </ul>
+      <br>
+      <dl>
+       <dt> Café</dt>
+       <dd> - coado na meia </dd>
+       <dt> leite</dt>
+       <dd> - de vaca </dd>
       </body>
       </html>
 
@@ -609,11 +615,17 @@ Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas
             <li> arroz </li>
             <li> macarrão </li>
             <li> feijão </li>
-
+<br>
   <ol>
          <li> arroz </li>
          <li> macarrão</li>
          <li> feijão</li>
       </ul>
+        <br>
+      <dl>
+       <dt> Café</dt>
+       <dd> - coado na meia </dd>
+       <dt> leite</dt>
+       <dd> - de vaca </dd>
 </body>
-
+</html> 
