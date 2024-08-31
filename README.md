@@ -576,3 +576,44 @@ Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas
   </table>
 </body>
 </html>
+
+# listas
+- para fazer listas usamos as tags a seguir:
+
+      <!DOCTYPE html>
+       <head>
+      
+       </head>
+       <body>
+      <ul>
+            <li> arroz </li>
+            <li> macarrão </li>
+            <li> feijão </li>
+
+       <ol>
+         <li> arroz </li>
+         <li> macarrão</li>
+         <li> feijão</li>
+      </ul>
+      </body>
+      </html>
+
+- Como o código acima aparece no navegador: 
+
+  <!DOCTYPE html>
+<head>
+      
+</head>
+<body>
+      <ul>
+            <li> arroz </li>
+            <li> macarrão </li>
+            <li> feijão </li>
+
+  <ol>
+         <li> arroz </li>
+         <li> macarrão</li>
+         <li> feijão</li>
+      </ul>
+</body>
+
