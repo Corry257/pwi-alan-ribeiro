@@ -510,3 +510,9 @@ O professor fez a proposta de criação de um site para um restaurante, a estrut
      <h5><p>Nossas redes sociais: @resujirokimimame</h5>      <!-- redes sociais -->        
 </body>   <!-- Final do corpo do site -->
 </html>    <!-- Final do código html -->
+
+# Aula 05
+Sexta-feira, 30 de agosto de 2024 
+Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas, ensinou novas tags e como mudar a coloração dessas tabelas e listas. 
+
+- Acrescentando tabelas
