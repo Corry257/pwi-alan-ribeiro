@@ -629,3 +629,353 @@ Na quinta aula o professor Davi Vilar nos ensinou a implementar tabelas e listas
        <dd> - de vaca </dd>
 </body>
 </html> 
+
+# Aula 06
+Nesta aula vimos mais algumas tags para incrementar em um site html, apredemos a mudar algumas letras ou frases individuais criando bordas ou divisões e também mudar a cor do fundo do site mas não apenas de todo o site apenas de sessões especificas que desejamos. 
+
+- Quando queremos mudar apenas uma parte do texto, ou letras especificas podemos criar uma divisão usando a tag < div > ou a tag < border >, por exemplo: 
+
+      <p> Lorem Ipsum <div>I am a div</div> dolor sit amet.
+
+      <p style="border: 1px solid black"> Hello World </p>
+
+- Como o código acima é visto e mostrado pelo navegador: 
+
+ <p> Lorem Ipsum <div>I am a div</div> dolor sit amet.
+
+  <p style="border: 1px solid black"> Hello World </p>
+
+- Podemos criar também uma divisão no site, fazendo uma parte de uma cor e outra parte com outra cor diferente, marcando a divisão do site pela cor, por exemplo: 
+
+      <div style="background-color:black;color:white;padding:20px;">
+      <h2>London</h2>
+      <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </div>
+
+      <div style="background-color:red;color:white;padding:20px;">
+      <h2>London</h2>
+      <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </div>
+
+- Veja como este código acima é lido e mostrado pelo navegador: 
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<div style="background-color:red;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<br>
+
+- Também é possível criar classes para facilitar na hora que for fazer uma menção futura dentro do código, ou seja, você acaba abreviando o código, pois não precisa digitar o código todo novamente, basta colocar as caracteristicas que você deseja que a determinada classe possui, por exemplo: 
+
+      <html>
+      <head>
+      <style>
+      .city {
+       background-color: tomato;
+       color: white;
+       border: 2px solid black;
+       margin: 20px;
+       padding: 20px;
+        }
+       </style>
+       </head>
+       <body>
+
+       <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+       </div>
+
+      <div class="city">
+       <h2>Paris</h2>
+       <p>Paris is the capital of France.</p>
+      </div>
+
+      <div class="city">
+       <h2>Tokyo</h2>
+       <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      </body>
+      </html>
+
+- Veja como o código acima é mostrado pelo navegador: 
+
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+# Criando uma nova sessão dentro do site
+- Vamos criar uma nova sessão dentro do site principal que será acessada através de um hiperlink, por exemplo, quando entramos no site principal e clicamos em uma foto ou texto, temos a possibilidade de ser redirecionados para outra página, vamos cria-la agora.
+
+- Está pagina tem que possuir as seguintes tags: 
+
+      <header> - Defines a header for a document or a section 
+
+      <nav> - Defines a set of navigation links 
+
+      <section> - Defines a section in a document 
+
+      <article> - Defines an independent, self-contained content 
+
+      <aside> - Defines content aside from the content (like a sidebar) 
+
+      <footer> - Defines a footer for a document or a section 
+
+      <details> - Defines additional details that the user can open and close on demand 
+
+      <summary> - Defines a heading for the < details > element
+
+
+- Como na atividade estamos fazendo um site para um restaurante vamos continuar com a temática, abaixo segue o código com as tags:
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <title>CSS Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+       * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica,  sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+       background: #ccc;
+       padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav, article {
+           width: 100%;
+           height: auto;
+      }
+      }
+      </style>
+      </head>
+      <body>
+
+      <h2>CSS Layout Float</h2>
+      <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+      <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+      <header>
+       <h2>Cities</h2>
+      </header>
+
+      <section>
+       <nav>
+         <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+  
+      <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+       </article>
+      </section>
+
+      <footer>
+       <p>Footer</p>
+          </footer>
+
+      </body>
+      </html>
+
+
+
+
+- Veja como o navegador mostrará o código acima: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
