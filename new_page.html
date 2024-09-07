@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cardápio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0e0d0d;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #e4e2e2;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fcfbfb;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0e0d0d;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Cardápio</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Suchi</a></li>
+      <li><a href="#">Temaki</a></li>
+      <li><a href="#">Yakisoba</a></li>
+      <li><a href="#">Sashimi</a></li>
+      <li><a href="#">Tempurá</a></li>
+      <li><a href="#">Guioza</a></li>
+      <li><a href="#">Missoshiru</a></li>
+      <li><a href="#">Harumaki</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Saudações do chefe</h1>
+    <p>Nosso chefe sujiro kimimame prepara tudo com todo carinho para você</p>
+    <p>Aproveite nossas sugestões de pratos ao lado.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Rua dos bobos, n° 000, São Paulo - SP</p>
+</footer>
+
+</body>
+</html>
