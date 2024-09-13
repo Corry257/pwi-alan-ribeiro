@@ -979,5 +979,8 @@ footer {
 
 # Aula 07
 
-
+# Estrutura de pastas
+ls/dir/ll -> listar pastas 
+cd nomedapasta ou cd .. (cd .., volta a pasta em um nível)
+. -> ponto único significa 
 
