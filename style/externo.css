@@ -1,0 +1,34 @@
+h1 {
+  color: white; 
+  background-color: black;
+  font-size: 6rem;
+}
+
+h2 {
+  color: rgb(8, 8, 8);
+  font-size: 4rem;
+}
+
+body {
+  text-align: center;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(237, 238, 237);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(114, 87, 100);
+}
+
+/* selected link */
+a:active {
+  color: rgb(17, 17, 43);
+}
