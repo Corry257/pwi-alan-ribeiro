@@ -1,9 +1,11 @@
-h1 {
+/* Estilo Nome do restaurante */
+ h1{
   color: white; 
   background-color: black;
   font-size: 6rem;
 }
 
+/* Estilo slogan */
 h2 {
   color: rgb(8, 8, 8);
   font-size: 2rem;
@@ -34,3 +36,7 @@ a:active {
   color: #1a1818; /* Cor do link enquanto está sendo clicado */
 }
 
+table, th, td
+{
+  border: 1px solid rgb(238, 7, 7);
+}
