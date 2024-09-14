@@ -23,7 +23,7 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 700px; /* altura do site */
+  height: 700px;
   background: #e4e2e2;
   padding: 20px;
 }
@@ -56,10 +56,9 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #fcfbfb;
-  height: 700px; /* Altura do site */
 }
 
-/* Clear floats after the columns */
+/* Limpa floats das colunas */
 section::after {
   content: "";
   display: table;
@@ -71,7 +70,7 @@ footer {
   background-color: #0e0d0d;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: rgb(252, 251, 251);
 }
 
 /* Layout responsivo - faz com que as duas colunas/caixas sejam empilhadas uma sobre a outra, 
@@ -82,6 +81,7 @@ em vez de uma ao lado da outra, em telas pequenas */
     height: auto;
   }
 }
+
 </style>
 </head>
 <body>
@@ -93,29 +93,28 @@ em vez de uma ao lado da outra, em telas pequenas */
 <section>
   <nav>
     <ul>
-      <li><a href="/index.html">página inicial</a></li>
-      <li><a href="/cardapio/cardabpio.html"></li>
+      <li><a href="/index.html">Página inicial</a></li>
       <li><a href="./niguiri.html">Niguiri</a></li>
       <li><a href="./temaki.html">Temaki</a></li>
       <li><a href="./yakisoba.html">Yakisoba</a></li>
       <li><a href="./sashimi.html">Sashimi</a></li>
       <li><a href="./tempura.html">Tempurá</a></li>
-      <li><a href="./guioza.html">Guioza</a></li>
-      <li><a href="./missoshiru">Missoshiru</a></li>
+      <li><a href="./gyoza.html">Gyoza</a></li>
+      <li><a href="./missoshiru.html">Missoshiru</a></li>
       <li><a href="./harumaki.html">Harumaki</a></li>
       <li><a href="./hothol.html">Hot-holl</a></li>
     </ul>
   </nav>
   
   <article>
-    Sugestão de pratos ao lado, Itadakimasu!
+    <h1>Sugestões de pratos ao lado, Itadakimasu!</h1>
     <img src="/images/comida-japonesa.jpg" alt="A arte de comer bem"> <br>   
   </article>
 </section>
 
 <footer>
-  <p>Rua dos bobos, n° 000, São Paulo - SP</p>
-  <p>® Restaurante Sujiro Kimimame - Todos direitos reservados</p>
+  <h4>Rua dos bobos, n° 000, São Paulo - SP</h4>
+  <h5>® Restaurante Sujiro Kimimame - Todos direitos reservados</h5>
 </footer>
 
 </body>

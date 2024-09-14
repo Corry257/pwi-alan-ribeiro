@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/* Style the header */
+/* Estilo da cabeça */
 header {
   background-color: #0e0d0d;
   padding: 10px;
@@ -19,16 +19,16 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Cria duas colunas/caixas que flutuam uma ao lado da outra */
 nav {
   float: left;
   width: 30%;
-  height: 700px; /* only for demonstration, should be removed */
   background: #e4e2e2;
   padding: 20px;
+  height: 650px;
 }
 
-/* Style the list inside the menu */
+/* Estilo da lista dentro do menu */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -51,30 +51,31 @@ nav ul li a:active {
   color: #0000ff; /* Cor dos links quando clicados */
 }
 
+/* Estilo da descrição do prato */
 article {
   float: left;
   padding: 20px;
   width: 70%;
-  background-color: #fcfbfb;
-  height: 700px; /* only for demonstration, should be removed */
+  background-color: #fcfbfb; 
 }
 
-/* Clear floats after the columns */
+/* Limpa floats das colunas */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
+/* Estilo do rodapé */
 footer {
   background-color: #0e0d0d;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: rgb(250, 249, 249);
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* Layout responsivo - faz com que as duas colunas/caixas sejam empilhadas uma sobre a outra, 
+em vez de uma ao lado da outra, em telas pequenas */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -82,9 +83,30 @@ footer {
   }
 }
 
+/* Tabela de cardápio */
 table, th, td
 {
-  border: 1px solid rgb(238, 7, 7);
+  border: 1px solid rgb(238, 7, 7); /* Cor das bordas */
+  text-align: center;
+}
+
+b {
+  color: #fcfbfb; /* Cor padrão dos links */
+  text-decoration: underline; /* Sublinhado dos links */
+  background-color: #080808; /* Cor de fundo do botão pedir */
+  font-size: 2rem; /* Tamanho do botão pedir*/
+}
+
+b:hover {
+  color: #da0b0b; /* Cor dos links ao passar o mouse */
+}
+
+b:visited {
+  color: #383737; /* Cor dos links visitados */
+}
+
+b:active {
+  color: #0000ff; /* Cor dos links quando clicados */
 }
 
 </style>
@@ -98,24 +120,24 @@ table, th, td
 <section>
   <nav>
     <ul>
-        <li><a href="/index.html">página inicial</a></li>
-        <li><a href="/cardapio/cardabpio.html">Menu</li>
+        <li><a href="/index.html">Página inicial</a></li>
+        <li><a href="/cardapio/menu.html">Menu</li>
         <li><a href="./niguiri.html">Niguiri</a></li>
         <li><a href="./yakisoba.html">Yakisoba</a></li>
         <li><a href="./sashimi.html">Sashimi</a></li>
         <li><a href="./tempura.html">Tempurá</a></li>
-        <li><a href="./guioza.html">Guioza</a></li>
-        <li><a href="./missoshiru">Missoshiru</a></li>
+        <li><a href="./gyoza.html">Gyoza</a></li>
+        <li><a href="./missoshiru.html">Missoshiru</a></li>
         <li><a href="./harumaki.html">Harumaki</a></li>
         <li><a href="./hothol.html">Hot-holl</a></li>
       </ul>
   </nav>
   
   <article>
-    Temaki <br>
-    <br> O niguiri é um bolinho de arroz com uma fatia de salmão por cima. <br> 
-    seu nome significa “dois dedos”, uma referência à pequena porção de arroz que o chefe coloca a cada porção.
-    
+    <h1>Temaki </h1>
+    <p>Traduzido como “enrolado de mão”. <br> 
+    O temaki é um cone de nori com arroz dentro e recheio de salmão por cima. </p>
+  
     <table>
       <tbody>
         <tr>
@@ -126,9 +148,9 @@ table, th, td
         </tr>
         <tr>
           <td> <img src="/images/temaki.jpeg" alt="Temaki"> </td>
-          <td> arroz, salmão,<br> alga </td>
+          <td> arroz, salmão,<br> nori </td>
           <td> R$15,00 </td>
-          <td><a href="#">Pedir</a></td>
+          <td><b href="#">Pedir</b></td>
         </tr>
       </tbody>
     </table>
@@ -136,8 +158,8 @@ table, th, td
 </section>
 
 <footer>
-    <p>Rua dos bobos, n° 000, São Paulo - SP</p>
-    <p>® Restaurante Sujiro Kimimame - Todos direitos reservados</p>
+  <h4>Rua dos bobos, n° 000, São Paulo - SP</h4>
+  <h5>® Restaurante Sujiro Kimimame - Todos direitos reservados</h5>
 </footer>
 
 </body>

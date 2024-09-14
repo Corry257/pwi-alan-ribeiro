@@ -4,16 +4,13 @@
 <title>Cardápio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style/externo.css"> <!-- Incorporação do CSS ao código-->
 <style>
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
+/* Estilo da cabeça */
 header {
   background-color: #0e0d0d;
   padding: 10px;
@@ -22,51 +19,96 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Cria duas colunas/caixas que flutuam uma ao lado da outra */
 nav {
   float: left;
   width: 30%;
-  height: 700px; /* only for demonstration, should be removed */
   background: #e4e2e2;
   padding: 20px;
+  height: 650px;
 }
 
-/* Style the list inside the menu */
+/* Estilo da lista dentro do menu */
 nav ul {
   list-style-type: none;
   padding: 0;
 }
 
+nav ul li a {
+  color: #000; /* Cor padrão dos links */
+  text-decoration: underline; /* sublinhado dos links */
+}
+
+nav ul li a:hover {
+  color: #da0b0b; /* Cor dos links ao passar o mouse */
+}
+
+nav ul li a:visited {
+  color: #383737; /* Cor dos links visitados */
+}
+
+nav ul li a:active {
+  color: #0000ff; /* Cor dos links quando clicados */
+}
+
+/* Estilo da descrição do prato */
 article {
   float: left;
   padding: 20px;
   width: 70%;
-  background-color: #fcfbfb;
-  height: 700px; /* only for demonstration, should be removed */
+  background-color: #fcfbfb; 
 }
 
-/* Clear floats after the columns */
+/* Limpa floats das colunas */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
+/* Estilo do rodapé */
 footer {
   background-color: #0e0d0d;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: rgb(250, 249, 249);
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* Layout responsivo - faz com que as duas colunas/caixas sejam empilhadas uma sobre a outra, 
+em vez de uma ao lado da outra, em telas pequenas */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
     height: auto;
   }
 }
+
+/* Tabela de cardápio */
+table, th, td
+{
+  border: 1px solid rgb(238, 7, 7); /* Cor das bordas */
+  text-align: center;
+}
+
+b {
+  color: #fcfbfb; /* Cor padrão dos links */
+  text-decoration: underline; /* Sublinhado dos links */
+  background-color: #080808; /* Cor de fundo do botão pedir */
+  font-size: 2rem; /* Tamanho do botão pedir*/
+}
+
+b:hover {
+  color: #da0b0b; /* Cor dos links ao passar o mouse */
+}
+
+b:visited {
+  color: #383737; /* Cor dos links visitados */
+}
+
+b:active {
+  color: #0000ff; /* Cor dos links quando clicados */
+}
+
 </style>
 </head>
 <body>
@@ -78,25 +120,46 @@ footer {
 <section>
   <nav>
     <ul>
-      <li><a href="./suchi.html">Suchi</a></li>
-      <li><a href="./temaki.html">Temaki</a></li>
-      <li><a href="./yakisoba.html">Yakisoba</a></li>
-      <li><a href="./sashimi.html">Sashimi</a></li>
-      <li><a href="./tempura.html">Tempurá</a></li>
-      <li><a href="./guioza.html">Guioza</a></li>
-      <li><a href="./missoshiru">Missoshiru</a></li>
-      <li><a href="./harumaki.html">Harumaki</a></li>
-      <li><a href="./hothol.html">Hot-holl</a></li>
-    </ul>
+        <li><a href="/index.html">Página inicial</a></li>
+        <li><a href="/cardapio/menu.html">Menu</li>
+        <li><a href="./niguiri.html">Niguiri</a></li>
+        <li><a href="./temaki.html">Temaki</a></li>
+        <li><a href="./yakisoba.html">Yakisoba</a></li>
+        <li><a href="./sashimi.html">Sashimi</a></li>
+        <li><a href="./tempura.html">Tempurá</a></li>
+        <li><a href="./gyoza.html">Gyoza</a></li>
+        <li><a href="./missoshiru.html">Missoshiru</a></li>
+        <li><a href="./hothol.html">Hot-holl</a></li>
+      </ul>
   </nav>
   
   <article>
-    Sugestão de pratos ao lado, escolha com sabedoria pois, blablabla, blablabla.
+    <h1>Hot-roll</h1>
+    <p>Cada peça consiste em um recheio dentro de arroz envolto em nori. <br>
+      Depois de pronto, o sushi é empanado na crocantíssima farinha panko e frito.</p>
+  
+    <table>
+      <tbody>
+        <tr>
+          <th>Hot-roll</th>
+          <th>Ingredientes</th>
+          <th>Valor</th>
+          <th>Faça seu pedido</th>
+        </tr>
+        <tr>
+          <td><img src="/images/hotroll.jpeg" alt="Hot-roll"></td>
+          <td>Salmão, arroz, <br> nori, farinha panco, <br> cream-cheese</td>
+          <td>R$15,00</td>
+          <td><b href="#">Pedir</b></td>
+        </tr>
+      </tbody>
+    </table>
   </article>
 </section>
 
 <footer>
-  <p>Rua dos bobos, n° 000, São Paulo - SP</p>
+  <h4>Rua dos bobos, n° 000, São Paulo - SP</h4>
+  <h5>® Restaurante Sujiro Kimimame - Todos direitos reservados</h5>
 </footer>
 
 </body>
