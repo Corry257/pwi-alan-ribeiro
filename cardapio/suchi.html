@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cardápio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style/externo.css"> <!-- Incorporação do CSS ao código-->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #0e0d0d;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 700px; /* only for demonstration, should be removed */
+  background: #e4e2e2;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #000; /* Cor padrão dos links */
+  text-decoration: underline; /* sublinhado dos links */
+}
+
+nav ul li a:hover {
+  color: #da0b0b; /* Cor dos links ao passar o mouse */
+}
+
+nav ul li a:visited {
+  color: #383737; /* Cor dos links visitados */
+}
+
+nav ul li a:active {
+  color: #0000ff; /* Cor dos links quando clicados */
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fcfbfb;
+  height: 700px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0e0d0d;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Cardápio</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="/index.html">página inicial</a></li>
+        <li><a href="/cardapio/cardabpio.html">Menu</li>
+        <li><a href="./suchi.html">Suchi</a></li>
+        <li><a href="./temaki.html">Temaki</a></li>
+        <li><a href="./yakisoba.html">Yakisoba</a></li>
+        <li><a href="./sashimi.html">Sashimi</a></li>
+        <li><a href="./tempura.html">Tempurá</a></li>
+        <li><a href="./guioza.html">Guioza</a></li>
+        <li><a href="./missoshiru">Missoshiru</a></li>
+        <li><a href="./harumaki.html">Harumaki</a></li>
+        <li><a href="./hothol.html">Hot-holl</a></li>
+      </ul>
+  </nav>
+  
+  <article>
+    Descrição de sushi <br>
+    tabela de preço com fotos 
+  </article>
+</section>
+
+<footer>
+    <p>Rua dos bobos, n° 000, São Paulo - SP</p>
+    <p>® Restaurante Sujiro Kimimame - Todos direitos reservados</p>
+</footer>
+
+</body>
+</html>

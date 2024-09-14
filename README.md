@@ -978,9 +978,8 @@ footer {
 
 
 # Aula 07
+O professor João voltou a dar aula e nos ensinou a dar inicio a programar com o CSS.
 
-# Estrutura de pastas
-ls/dir/ll -> listar pastas 
-cd nomedapasta ou cd .. (cd .., volta a pasta em um nível)
-. -> ponto único significa 
+# Incorporando o CSS ao HTML
 
+- 

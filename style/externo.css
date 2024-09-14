@@ -6,29 +6,31 @@ h1 {
 
 h2 {
   color: rgb(8, 8, 8);
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
+/* Estilos globais */
 body {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-/* unvisited link */
+/* Estilo dos links */
 a:link {
-  color: white;
+  color: #f5f5f7; /* Cor do link não visitado */
 }
 
-/* visited link */
 a:visited {
-  color: rgb(237, 238, 237);
+  color: #f4f3f7; /* Cor do link visitado */
 }
 
-/* mouse over link */
 a:hover {
-  color: rgb(114, 87, 100);
+  color: #92192d; /* Cor do link ao passar o mouse */
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
 
-/* selected link */
 a:active {
-  color: rgb(17, 17, 43);
+  color: #1a1818; /* Cor do link enquanto está sendo clicado */
 }
+
