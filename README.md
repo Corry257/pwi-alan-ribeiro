@@ -983,3 +983,112 @@ O professor João voltou a dar aula e nos ensinou a dar inicio a programar com o
 # Incorporando o CSS ao HTML
 
 - 
+
+# Aula 09
+
+Nesta aula o professor começou a ensinar a fazer formulários no html
+
+- Crie um arquivo html
+- aperte ponto de esclamação na pirmiera linha do código e dê um enter (no code)
+- Isso faz com que o documento preencha os requisitos padrões de um documento do tipo html
+
+# criando formulários
+
+- para criar formulários vamos usar as seguintes tags: 
+
+        <input type="radio" id="opcao1" name="fav_language" value="Santos"> <!-- essa tag cria um botão virtual clicável do tipo radio -->
+        <label for="Santos">Santos</label><br>  <!-- aqui cria uma label que será obersavada pelo usuário -->
+
+- Código exemplo de um formulário:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de clientes</title>
+</head>
+<body>
+    <h2>Compreendendo o Formulário</h2>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="primeironome" name="primeironome" value=""> 
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="Sobrenome" value="">
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" value="">
+
+        <h2>Conhecendo nosso cliente</h2>
+        <h3>Qual time você torce?</h3>
+
+        <input type="radio" id="opcao3" name="fav_language" value="Santos">
+        <label for="Santos">Santos</label><br>
+        <input type="radio" id="opcao4" name="fav_language" value="Corinthians">
+        <label for="Corinthians">Corinthans</label><br>
+        <input type="radio" id="opcao1" name="fav_language" value="São Paulo">
+        <label for="São Paulo">São Paulo</label><br>
+        <input type="radio" id="opcao2" name="fav_language" value="Palmeiras">
+        <label for="Palmeiras">Palmeiras</label><br>
+
+        <h2>Qual o melhor jogador da temporada</h2>
+
+        <input type="checkbox" id="best1" name="best1" Value="best1">
+        <label for="best1">best1</label><br>
+        <input type="checkbox" id="best2" name="best2" Value="best2">
+        <label for="best2">best2</label><br>
+        <input type="checkbox" id="best3" name="best3" Value="best3">
+        <label for="best3">best3</label><br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+- Como será mostrado pelo navegador: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de clientes</title>
+</head>
+<body>
+    <h2>Compreendendo o Formulário</h2>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="primeironome" name="primeironome" value=""> 
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="Sobrenome" value="">
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" value="">
+
+        <h2>Conhecendo nosso cliente</h2>
+        <h3>Qual time você torce?</h3>
+
+        <input type="radio" id="opcao3" name="fav_language" value="Santos">
+        <label for="Santos">Santos</label><br>
+        <input type="radio" id="opcao4" name="fav_language" value="Corinthians">
+        <label for="Corinthians">Corinthans</label><br>
+        <input type="radio" id="opcao1" name="fav_language" value="São Paulo">
+        <label for="São Paulo">São Paulo</label><br>
+        <input type="radio" id="opcao2" name="fav_language" value="Palmeiras">
+        <label for="Palmeiras">Palmeiras</label><br>
+
+        <h2>Qual o melhor jogador da temporada</h2>
+
+        <input type="checkbox" id="best1" name="best1" Value="best1">
+        <label for="best1">best1</label><br>
+        <input type="checkbox" id="best2" name="best2" Value="best2">
+        <label for="best2">best2</label><br>
+        <input type="checkbox" id="best3" name="best3" Value="best3">
+        <label for="best3">best3</label><br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+# Aula 10 
+
+- comentário. 
