@@ -1001,15 +1001,15 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
 
 - Código exemplo de um formulário:
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h2>Compreendendo o Formulário</h2>
-    <form>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <h2>Compreendendo o Formulário</h2>
+        <form>
         <label for="nome">Nome</label>
         <input type="text" id="primeironome" name="primeironome" value=""> 
         <label for="sobrenome">Sobrenome</label>
@@ -1050,7 +1050,7 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 </head>
 <body>
     <h2>Compreendendo o Formulário</h2>
@@ -1085,6 +1085,40 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
         <br>
         <input type="submit" value="Enviar">
     </form>
+</body>
+</html>
+
+# Introdução a JavaScript
+
+tananana tananan
+
+- implementando JavaScript no html:
+
+        <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h2>What Can JavaScript Do?</h2>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+        </body>
+        </html>
+
+- como será visto pelo navegador: 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
 </body>
 </html>
 
