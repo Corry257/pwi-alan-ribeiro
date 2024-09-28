@@ -1006,7 +1006,6 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações de clientes</title>
 </head>
 <body>
     <h2>Compreendendo o Formulário</h2>
@@ -1051,7 +1050,7 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações de clientes</title>
+    
 </head>
 <body>
     <h2>Compreendendo o Formulário</h2>
@@ -1063,10 +1062,10 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
         <label for="email"> Email: </label>
         <input type="email" id="email" name="email" value="">
 
-        <h2>Conhecendo nosso cliente</h2>
+   <h2>Conhecendo nosso cliente</h2>
         <h3>Qual time você torce?</h3>
 
-        <input type="radio" id="opcao3" name="fav_language" value="Santos">
+   <input type="radio" id="opcao3" name="fav_language" value="Santos">
         <label for="Santos">Santos</label><br>
         <input type="radio" id="opcao4" name="fav_language" value="Corinthians">
         <label for="Corinthians">Corinthans</label><br>
@@ -1075,9 +1074,9 @@ Nesta aula o professor começou a ensinar a fazer formulários no html
         <input type="radio" id="opcao2" name="fav_language" value="Palmeiras">
         <label for="Palmeiras">Palmeiras</label><br>
 
-        <h2>Qual o melhor jogador da temporada</h2>
+  <h2>Qual o melhor jogador da temporada</h2>
 
-        <input type="checkbox" id="best1" name="best1" Value="best1">
+   <input type="checkbox" id="best1" name="best1" Value="best1">
         <label for="best1">best1</label><br>
         <input type="checkbox" id="best2" name="best2" Value="best2">
         <label for="best2">best2</label><br>
